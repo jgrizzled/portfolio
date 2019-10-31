@@ -1,0 +1,213 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html {
+  color: #F5F5F5;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+  Fluid typography formula
+  Set media query to min-width: minScr
+  calc(minScr px + (maxFnt - minFnt) * (100vw - minScr) / (maxScr - minScr);
+*/
+@media screen and (min-width: 320px) {
+  html { 
+    font-size: calc( 16px + (18 - 16) * (100vw - 320px) / (900 - 320) ); 
+  }
+}
+
+
+body {
+  background: #222;
+  padding-bottom: 10px;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: #111;
+}
+
+.nav-container {
+  margin: auto;
+  max-width: 900px;
+  padding: 0.33rem 10px 0.33rem 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-link {
+  margin: 0 auto 0 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-link:visited {
+  margin: 0 auto 0 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  min-width: 190px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.img-circle {
+  height: 8rem;
+  min-height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(245,245,245,0.25);
+  margin-bottom: 1rem;
+}
+
+header {
+  background:linear-gradient(to bottom, rgba(34, 34, 34, 0.33), rgba(0, 0, 0, 0.66)), url('../img/sedona-background.jpg') top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  text-align: center;
+  max-width: 900px;
+  padding: 3rem 10px 2rem 10px;
+  margin: auto;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: auto;
+}
+
+.icon {
+  height: 24px;
+}
+
+section {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  padding: 0 10px 0 10px;
+}
+
+.project h3 {
+  text-align: center;
+}
+
+.project-link-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:50%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.github-button-link {
+  background: #F5F5F5;
+  border-radius: 4px;
+  color: #222222;
+  text-decoration: none;
+  padding: 2px 6px 3px 2px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.github-button-link p {
+  font-size: 14px;
+  padding: 2px 0 1px 4px;
+}
+
+.github-button-link:visited {
+  color: #222222;
+  text-decoration: none;
+}
+
+.border-link {
+  border: 2px solid blue;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  height: 25px;
+  padding: 2px 5px 22px 5px;
+}
+
+.border-link:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+.screenshot {
+  display: block;
+  width: 40%;
+  min-width: 200px;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#about p {
+  margin: 0;
+}
+
+#contact ul {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#contact ul li:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+#contact ul img {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+  }
+  .project h3 {
+    text-align: left;
+  }
+  .screenshot {
+    width: 100%;
+  }
+}
+
