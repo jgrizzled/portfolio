@@ -6,7 +6,8 @@
   <meta name="description" content="Justin Greene's web portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cardo:400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -30,17 +31,17 @@
       <ul>
         <li>
           <a href="mailto:justin.greene5@gmail.com" target="_blank">
-            <img src="img/icons/email-icon.png" class="icon" alt="email">
+            <img src="img/icons/email-icon.png" class="icon icon-link" alt="email">
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/justin-greene-a680b837/" target="_blank">
-            <img src="img/icons/linkedin-icon.png" class="icon" alt="linkedin">
+            <img src="img/icons/linkedin-icon.png" class="icon icon-link" alt="linkedin">
           </a>
         </li>
         <li>
           <a href="https://github.com/jgrizzled" target="_blank">
-            <img src="img/icons/github-icon-light.png" class="icon" alt="github">
+            <img src="img/icons/github-icon-light.png" class="icon icon-link-circle" alt="github">
           </a>
         </li>
       </ul>
@@ -51,13 +52,19 @@
     <article class="project">
       <div>
         <h3>Blockchain Quiz</h3>
-        <p>This browser-based quiz app tests your knowledge on blockchain fundamentals. It utilizes HTML5, CSS3, and jQuery to generate a responsive single-page web app for both mobile and desktop.</p>
+        <p>A web-based quiz on blockchain fundamentals for technical blockchain enthusiasts. </p>
+        <ul>
+          <li>Responsive single-page design for desktop and mobile.</li>
+          <li>Technologies include <a href="https://html.spec.whatwg.org/" target="_blank">HTML5</a>, <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS3</a>, and <a href="https://jquery.com/" target="_blank">jQuery</a>.</li>
+        </ul>
       </div>
-      <picture>
-        <source media="(min-width: 900px)"
-          srcset="img/quiz-desktop.png">
-        <img class="screenshot" src="img/quiz-mobile.png" alt="screenshot">
-      </picture>
+      <a href="https://jgrizzled.github.io/blockchain-quiz-app/" target="_blank">
+        <picture>
+          <source media="(min-width: 900px)"
+            srcset="img/blockchain-quiz-app-ss-desktop.png">
+          <img class="screenshot" src="img/blockchain-quiz-app-ss-mobile.png" alt="screenshot">
+        </picture>
+      </a>
       <div class="project-link-container">
           <a href="https://github.com/jgrizzled/blockchain-quiz-app" target="_blank" class="github-button-link">
             <img src="img/icons/github-icon-dark.png" height="20" alt="github">
@@ -68,10 +75,37 @@
           </a>
         </div>
     </article>
+    <article class="project">
+      <div>
+        <h3>National Parks Search</h3>
+        <p>A search app for the NPS.gov parks database, for travellers to find new parks.</p>
+        <ul>
+          <li>Supports text queries, filtering by US states, and pagination.</li>
+          <li>Responsive design for desktop and mobile.</li>
+          <li>Technologies include <a href="https://html.spec.whatwg.org/" target="_blank">HTML5</a>, <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS3</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, and <a href="https://select2.org/" target="_blank">select2</a>.</li>
+        </ul>  
+      </div>
+      <a href="https://jgrizzled.github.io/national-parks-search/" target="_blank">
+        <picture>
+          <source media="(min-width: 900px)"
+            srcset="img/national-parks-search-ss-desktop.png">
+          <img class="screenshot" src="img/national-parks-search-ss-mobile.png" alt="screenshot">
+        </picture>
+      </a>
+      <div class="project-link-container">
+          <a href="https://github.com/jgrizzled/national-parks-search" target="_blank" class="github-button-link">
+            <img src="img/icons/github-icon-dark.png" height="20" alt="github">
+            <span>Source</span>
+          </a>
+          <a href="https://jgrizzled.github.io/national-parks-search/" target="_blank" class="border-link">
+            Demo
+          </a>
+        </div>
+    </article>
   </section>
   <section id="about">
     <h2>About</h2>
-    <p>I am a full stack web developer in training, currently attending the Thinkful Engineering program. I previously worked in IT networking and security, building and maintaining diverse environments for various clients. I also enjoy building things with web technologies, and am re-orienting my career to follow my passions.</p>
+    <p>I am a full stack web developer in training, currently attending the Thinkful Engineering program. I previously worked in IT networking and security, building and maintaining diverse environments for various clients. I also enjoy building things with web technologies, and am re-orienting my career to follow my passions. I am looking to join a cohesive team of programmers who value communication, mentorship, and learning new technologies.</p>
     <br>
     <p>I am fascinated with blockchain and cryptocurrency technology. You can often find me reading a blockchain whitepaper or pondering my own crypto app ideas. Beyond tech, I like to go hiking and camping, sometimes lugging a camera around to capture beautiful scenery.</p>
   </section>
