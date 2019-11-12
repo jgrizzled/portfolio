@@ -7,8 +7,8 @@
   --gray: #cccccc;
   --dark-gray: #bfbfbf;
   --darker-gray: #8c8c8c;
-  --light-blue: #007bff;
-  --lighter-blue: #3396ff;
+  --light-blue: #57a8ff;
+  --lighter-blue: #99caff;
 }
 
 *, :after, :before {
@@ -19,9 +19,9 @@ html {
   color: var(--dark-gray);
   /*
     Fluid typography formula
-    calc(base px + (maxFnt - minFnt) * (100vw - minScr) / (maxScr - minScr);
+    calc(minFnt px + (maxFnt - minFnt) * (100vw - minScr px) / (maxScr - minScr);
   */
-  font-size: calc( 16px + (16 - 12) * (100vw - 320px) / (1440 - 320) ); 
+  font-size: calc(16px + (19 - 16) * (100vw - 320px) / (900 - 320));
   line-height: 1.4;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
@@ -30,6 +30,13 @@ html {
 body {
   background: var(--charcoal);
   padding-bottom: 10px;
+}
+
+.scroll-offset {
+  display: block;
+  position: relative;
+  top: -2rem;
+  visibility: hidden;
 }
 
 h1 {
@@ -61,6 +68,7 @@ p {
 a {
   color: var(--darker-gray);
   text-decoration: none;
+  font-weight: bold;
   transition: color .15s ease-in-out;
 }
 
@@ -72,13 +80,14 @@ a:hover {
   color: var(--dark-gray);
 }
 
-nav {
+#nav-bar {
   position: fixed;
   width: 100%;
   background: var(--darker-charcoal);
 }
 
-.nav-container {
+#nav-container {
+  position: relative;
   margin: auto;
   max-width: 900px;
   padding: 0.33rem 10px 0.33rem 10px;
@@ -86,9 +95,12 @@ nav {
   justify-content: space-between;
 }
 
-.home-link {
+#home-link {
   margin: 0 auto 0 0;
+  padding: 0.5rem 0 0.5rem 0;
   color: var(--gray);
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
 .home-link:visited {
@@ -96,18 +108,79 @@ nav {
   color: var(--gray);
 }
 
-nav ul {
+#wide-nav {
+  display: none;
+}
+
+#wide-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 33%;
   min-width: 190px;
 }
 
-nav ul li {
-  display: inline;
+#wide-nav li {
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#wide-nav a {
+  font-size: 1.2rem;
+}
+
+#burger-menu {
+  position: absolute;
+  top:100%;
+  right: -100%;
+  transition: right .15s ease-in-out;
+}
+
+#burger-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  min-width: 190px;
+}
+
+.burger-item {
+  display: inline-block;
+  background: var(--darker-charcoal);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-top: 1px solid var(--light-charcoal);
+}
+
+.burger-item a {
+  font-size: 1.5rem;
+  font-weight: normal;
+  width: 100%;
+}
+
+#burger-toggle {
+  font-size: 2.3rem;
+  margin-top: -0.4rem;
+}
+
+@media only screen and (min-width: 700px) {
+  #nav-toggle {
+    display: none;
+  }
+  #wide-nav {
+    display: block;
+  }
+  #burger-menu {
+    display: none;
+  }
+  #burger-toggle {
+    display: none;
+  }
 }
 
 .img-circle {
@@ -118,13 +191,13 @@ nav ul li {
   box-shadow: 0px 0px 2px 1px var(--soft-white);
 }
 
-header {
+#header-background {
   background:linear-gradient(to bottom, rgba(34, 34, 34, 0.4), rgba(0, 0, 0, 0.9)), url('../img/sedona-background.jpg') top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.header-container {
+header {
   text-align: center;
   max-width: 900px;
   padding: 3rem 10px 2rem 10px;
@@ -172,16 +245,20 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 1rem auto 1rem auto;
+  margin: 3rem auto 3rem auto;
   padding: 0 10px 0 10px;
+}
+
+section::before {
+  content: ' ';
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
 }
 
 section h2 {
   margin: 2rem auto;
-}
-
-section#contact {
-  margin-top: 2rem;
 }
 
 .project {
@@ -279,7 +356,7 @@ section#contact {
   min-width: 200px;
   border-radius: 5px;
   box-shadow: 0px 0px 6px 4px var(--light-charcoal);
-  margin: auto;
+  margin: 2rem auto 1rem;
   transition: box-shadow .15s ease-in-out;
 }
 
@@ -287,11 +364,19 @@ section#contact {
   box-shadow: 0px 0px 10px 5px var(--darker-gray);
 }
 
-#about p {
+#about-section {
+  margin-bottom: 6rem;
+}
+
+#about-section p {
   margin: 0;
 }
 
-#contact ul {
+#contact-section {
+  margin-top: 2rem;
+}
+
+#contact-section ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -299,14 +384,14 @@ section#contact {
   margin-bottom: 1rem;
 }
 
-#contact ul li:first-child {
+#contact-section ul li:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
   height: max-content;
 }
 
-#contact ul img {
+#contact-section ul img {
   margin-right: 0.5rem;
 }
 
@@ -314,7 +399,7 @@ section#contact {
   html { 
     font-size: 1.2em; 
   }
-  .contact-container {
+  #contact-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -329,6 +414,7 @@ section#contact {
   }
   .screenshot {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
