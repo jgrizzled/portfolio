@@ -12,23 +12,19 @@ $(() => {
 
   //set nav background opacity between 15% and 100% based on scroll position
   function navScrollOpacity() {
-    setNavOpacity(win.scrollTop() / (documentHeight*0.05) + 0.15);
+    setNavOpacity(win.scrollTop() / (documentHeight * 0.05) + 0.15);
   }
 
   function setNavOpacity(opacity) {
-    nav.css('background',
-      'rgba(17, 17, 17, ' +
-        Math.min(
-          parseFloat(opacity)
-            .toFixed(2),
-          1) +
-      ')'
+    nav.css(
+      'background',
+      'rgba(17, 17, 17, ' + Math.min(parseFloat(opacity).toFixed(2), 1) + ')'
     );
   }
- 
+
   function toggleBurgerMenu(event) {
     event.stopPropagation();
-    if(!burgerOpened) {
+    if (!burgerOpened) {
       nav.css('transition', 'background .15s ease-in-out');
       nav.css('background', root.css('--darker-charcoal'));
       burgerMenu.css('right', '0');
@@ -47,12 +43,11 @@ $(() => {
       nav.css('transition', 'none');
     }
   }
-  
-  win.on('scroll', (event) => {
-    if(!burgerOpened)
-      navScrollOpacity();
-    else //close burger menu on scroll
-      toggleBurgerMenu(event);
+
+  win.on('scroll', event => {
+    if (!burgerOpened) navScrollOpacity();
+    //close burger menu on scroll
+    else toggleBurgerMenu(event);
   });
 
   navScrollOpacity(); //initialize nav opacity
