@@ -93,111 +93,261 @@
       <h2>Projects</h2>
       <article class="project">
         <div>
+          <h3>Uniswap10</h3>
+          <p>
+            View and customize a tradeable index of cryptocurrencies in this
+            full stack web app.
+          </p>
+          <ul>
+            <li>
+              Pulls blockchain market data from GraphQL endpoints
+            </li>
+            <li>
+              Normalizes and stores data in a PostgreSQL database
+            </li>
+            <li>
+              Computes trading backtests of a liquidity-weighted investment
+              strategy
+            </li>
+            <li>
+              Provides a scheduler to update the database with fresh market data
+            </li>
+            <li>Utilizes client and server-side caching for performance</li>
+            <li>
+              Technologies include
+              <a
+                href="https://reactjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >React.js</a
+              >,
+              <a
+                href="https://styled-components.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Styled Components</a
+              >,
+              <a
+                href="https://nodejs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Node.js</a
+              >,
+              <a
+                href="https://www.postgresql.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >PostgreSQL</a
+              >,
+              <a
+                href="https://expressjs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Express.js</a
+              >, and
+              <a
+                href="https://heroku.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Heroku</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a
+            href="https://jgrizzled.github.io/uniswap10-server/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a-screenshot"
+          >
+            <picture>
+              <source
+                media="(min-width: 900px)"
+                srcset="img/uniswap10-ss-desktop.png"
+              />
+              <img
+                class="img-screenshot"
+                src="img/uniswap10-ss-mobile.png"
+                alt="screenshot"
+              />
+            </picture>
+          </a>
+          <div class="project-link-container">
+            <a
+              href="https://github.com/jgrizzled/uniswap10-server"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-button-link"
+            >
+              <img
+                src="img/icons/github-icon-dark.png"
+                height="20"
+                alt="github"
+              />
+              <span>Client</span>
+            </a>
+            <a
+              href="https://github.com/jgrizzled/uniswap10-client"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-button-link"
+            >
+              <img
+                src="img/icons/github-icon-dark.png"
+                height="20"
+                alt="github"
+              />
+              <span>Server</span>
+            </a>
+            <a
+              href="https://uniswap10.now.sh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border-link"
+            >
+              Demo
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div>
           <h3>dFund Info</h3>
           <p>
-            A webapp for viewing stats of decentralized investment funds running
-            on the Ethereum blockchain.
+            A single page webapp for viewing stats of decentralized investment
+            funds running on the Ethereum blockchain.
           </p>
           <ul>
             <li>
               Uses multiple APIs to gather a unique look into the burgeoning
-              decentralized fund ecosystem.
+              decentralized fund ecosystem
             </li>
             <li>
-              Asynchronously fetches, memoizes, and caches blockchain and
-              cryptocurrency price data
+              Asynchronously fetches and caches blockchain data
             </li>
             <li>Sort and filter fund data in a responsive table</li>
-            <li>Includes a framework for adding new fund platforms</li>
+            <li>Includes a module for adding new fund platforms</li>
             <li>
               Technologies include
-              <a href="https://html.spec.whatwg.org/" target="_blank">HTML5</a>,
-              <a href="https://sass-lang.com/" target="_blank">SCSS</a>,
-              <a href="https://jquery.com/" target="_blank">jQuery</a>,
-              <a href="https://webpack.js.org/" target="_blank">Webpack</a>,
-              <a href="https://web3js.readthedocs.io/" target="_blank"
+              <a
+                href="https://html.spec.whatwg.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >HTML5</a
+              >,
+              <a
+                href="https://sass-lang.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SCSS</a
+              >,
+              <a
+                href="https://jquery.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >jQuery</a
+              >,
+              <a
+                href="https://webpack.js.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Webpack</a
+              >,
+              <a
+                href="https://web3js.readthedocs.io/"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Web3.js</a
-              >, and <a href="https://graphql.org/" target="_blank">GraphQL</a>
+              >, and
+              <a
+                href="https://graphql.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GraphQL</a
+              >
             </li>
           </ul>
         </div>
-        <a
-          href="https://jgrizzled.github.io/dfund-info/"
-          target="_blank"
-          class="a-screenshot"
-        >
-          <picture>
-            <source
-              media="(min-width: 900px)"
-              srcset="img/dfund-info-ss-desktop.png"
-            />
-            <img
-              class="img-screenshot"
-              src="img/dfund-info-ss-mobile.png"
-              alt="screenshot"
-            />
-          </picture>
-        </a>
-        <div class="project-link-container">
-          <a
-            href="https://github.com/jgrizzled/dfund-info"
-            target="_blank"
-            class="github-button-link"
-          >
-            <img
-              src="img/icons/github-icon-dark.png"
-              height="20"
-              alt="github"
-            />
-            <span>Source</span>
-          </a>
+        <div>
           <a
             href="https://jgrizzled.github.io/dfund-info/"
             target="_blank"
-            class="border-link"
+            rel="noopener noreferrer"
+            class="a-screenshot"
           >
-            Demo
+            <picture>
+              <source
+                media="(min-width: 900px)"
+                srcset="img/dfund-info-ss-desktop.png"
+              />
+              <img
+                class="img-screenshot"
+                src="img/dfund-info-ss-mobile.png"
+                alt="screenshot"
+              />
+            </picture>
           </a>
+          <div class="project-link-container">
+            <a
+              href="https://github.com/jgrizzled/dfund-info"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-button-link"
+            >
+              <img
+                src="img/icons/github-icon-dark.png"
+                height="20"
+                alt="github"
+              />
+              <span>Source</span>
+            </a>
+            <a
+              href="https://jgrizzled.github.io/dfund-info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border-link"
+            >
+              Demo
+            </a>
+          </div>
         </div>
       </article>
       <article class="project">
         <div>
-          <h3>Blockchain Quiz</h3>
+          <h3>Portfolio Tools</h3>
           <p>
-            A web-based quiz on blockchain fundamentals for technical blockchain
-            enthusiasts.
+            A JS library with portfolio backtesting tools.
           </p>
           <ul>
-            <li>Responsive single-page design for desktop and mobile.</li>
+            <li>
+              Create a trading strategy, feed in price data, and compute
+              historical performance
+            </li>
+            <li>Supports Node and browser environments</li>
             <li>
               Technologies include
-              <a href="https://html.spec.whatwg.org/" target="_blank">HTML5</a>,
-              <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS3</a>,
-              and <a href="https://jquery.com/" target="_blank">jQuery</a>.
+              <a
+                href="https://nodejs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Node.js</a
+              >
+              and&nbsp;
+              <a
+                href="https://www.w3schools.com/js/js_es6.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ES6</a
+              >.
             </li>
           </ul>
         </div>
-        <a
-          href="https://jgrizzled.github.io/blockchain-quiz-app/"
-          target="_blank"
-          class="a-screenshot"
-        >
-          <picture>
-            <source
-              media="(min-width: 900px)"
-              srcset="img/blockchain-quiz-app-ss-desktop.png"
-            />
-            <img
-              class="img-screenshot"
-              src="img/blockchain-quiz-app-ss-mobile.png"
-              alt="screenshot"
-            />
-          </picture>
-        </a>
         <div class="project-link-container">
           <a
-            href="https://github.com/jgrizzled/blockchain-quiz-app"
+            href="https://github.com/desert-defi/portfolio-tools"
             target="_blank"
+            rel="noopener noreferrer"
             class="github-button-link"
           >
             <img
@@ -206,73 +356,6 @@
               alt="github"
             />
             <span>Source</span>
-          </a>
-          <a
-            href="https://jgrizzled.github.io/blockchain-quiz-app/"
-            target="_blank"
-            class="border-link"
-          >
-            Demo
-          </a>
-        </div>
-      </article>
-      <article class="project">
-        <div>
-          <h3>National Parks Search</h3>
-          <p>
-            A search app for the NPS.gov parks database, for travellers to find
-            new parks.
-          </p>
-          <ul>
-            <li>
-              Supports text queries, filtering by US states, and pagination.
-            </li>
-            <li>Responsive design for desktop and mobile.</li>
-            <li>
-              Technologies include
-              <a href="https://html.spec.whatwg.org/" target="_blank">HTML5</a>,
-              <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS3</a>,
-              <a href="https://jquery.com/" target="_blank">jQuery</a>, and
-              <a href="https://select2.org/" target="_blank">select2</a>.
-            </li>
-          </ul>
-        </div>
-        <a
-          href="https://jgrizzled.github.io/national-parks-search/"
-          target="_blank"
-          class="a-screenshot"
-        >
-          <picture>
-            <source
-              media="(min-width: 900px)"
-              srcset="img/national-parks-search-ss-desktop.png"
-            />
-            <img
-              class="img-screenshot"
-              src="img/national-parks-search-ss-mobile.png"
-              alt="screenshot"
-            />
-          </picture>
-        </a>
-        <div class="project-link-container">
-          <a
-            href="https://github.com/jgrizzled/national-parks-search"
-            target="_blank"
-            class="github-button-link"
-          >
-            <img
-              src="img/icons/github-icon-dark.png"
-              height="20"
-              alt="github"
-            />
-            <span>Source</span>
-          </a>
-          <a
-            href="https://jgrizzled.github.io/national-parks-search/"
-            target="_blank"
-            class="border-link"
-          >
-            Demo
           </a>
         </div>
       </article>
@@ -283,18 +366,18 @@
       <p>
         I am a full stack web developer in training, currently attending the
         Thinkful Engineering program. I previously worked in IT networking and
-        security, building and maintaining diverse environments for various
-        clients. I also enjoy building things with web technologies, and am
+        security, building and maintaining diverse environments for a variety of
+        clients. I enjoy building things with web technologies, and am
         re-orienting my career to follow my passions. I am looking to join a
-        cohesive team of programmers who value communication, mentorship, and
+        cohesive team of developers who value communication, mentorship, and
         learning new technologies.
       </p>
       <br />
       <p>
         I am fascinated with blockchain and cryptocurrency technology. You can
         often find me reading a blockchain whitepaper or pondering my own crypto
-        app ideas. Beyond tech, I like to go hiking and camping, sometimes
-        lugging a camera around to capture beautiful scenery.
+        app ideas. Beyond tech, I love to go hiking and camping, sometimes
+        lugging a camera around to capture beautiful scenery (like the header!).
       </p>
     </section>
     <section id="contact-section">
@@ -303,10 +386,13 @@
       <div id="contact-container">
         <ul>
           <li>
-            <img src="img/icons/email-icon.png" class="icon" alt="" />Email
+            <img src="img/icons/email-icon.png" class="icon" alt="email" />Email
           </li>
           <li>
-            <a href="mailto:justin.greene5@gmail.com" target="_blank"
+            <a
+              href="mailto:justin.greene5@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               >justin.greene5@gmail.com</a
             >
           </li>
@@ -316,11 +402,14 @@
             <img
               src="img/icons/github-icon-light.png"
               class="icon"
-              alt=""
+              alt="github"
             />Github
           </li>
           <li>
-            <a href="https://github.com/jgrizzled" target="_blank"
+            <a
+              href="https://github.com/jgrizzled"
+              target="_blank"
+              rel="noopener noreferrer"
               >github.com/jgrizzled</a
             >
           </li>
@@ -334,7 +423,10 @@
             />LinkedIn
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jgrizzled/" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/jgrizzled/"
+              target="_blank"
+              rel="noopener noreferrer"
               >linkedin.com/in/jgrizzled</a
             >
           </li>
@@ -348,7 +440,10 @@
             />Instagram
           </li>
           <li>
-            <a href="https://instagram.com/jgrizzled" target="_blank"
+            <a
+              href="https://instagram.com/jgrizzled"
+              target="_blank"
+              rel="noopener noreferrer"
               >instagram.com/jgrizzled</a
             >
           </li>
