@@ -93,6 +93,138 @@
       <h2>Projects</h2>
       <article class="project">
         <div>
+          <h3>COVID Markets</h3>
+          <p>
+            Chart US financial markets and COVID19 data in this full stack web
+            app.
+          </p>
+          <ul>
+            <li>
+              Provides an interactive dashboard for a unique view into the 2020
+              economic recession
+            </li>
+            <li>
+              Pulls market timeseries data and COVID case data from multiple
+              APIs
+            </li>
+            <li>
+              Stores, updates, and retrieves data with MongoDB
+            </li>
+            <li>
+              JAMstack architecture hosted on
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://vercel.com/"
+                >Vercel</a
+              >,&nbsp;
+              <a
+                href="https://heroku.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Heroku</a
+              >, and
+              <a
+                href="https://www.mongodb.com/cloud/atlas"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MongoDB Atlas</a
+              >
+            </li>
+            <li>
+              Technologies include
+              <a
+                href="https://reactjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >React.js</a
+              >,
+              <a
+                href="https://styled-components.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Styled Components</a
+              >,
+              <a
+                href="https://nodejs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Node.js</a
+              >,
+              <a
+                href="https://www.mongodb.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MongoDB</a
+              >, and
+              <a
+                href="https://expressjs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Express.js</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a
+            href="https://covidmarkets.now.sh"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a-screenshot"
+          >
+            <picture>
+              <source
+                media="(min-width: 900px)"
+                srcset="img/covidmarkets-ss-desktop.png"
+              />
+              <img
+                class="img-screenshot"
+                src="img/covidmarkets-ss-mobile.png"
+                alt="screenshot"
+              />
+            </picture>
+          </a>
+          <div class="project-link-container">
+            <a
+              href="https://github.com/jgrizzled/covidmarkets-client"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-button-link"
+            >
+              <img
+                src="img/icons/github-icon-dark.png"
+                height="20"
+                alt="github"
+              />
+              <span>Client</span> </a
+            >&nbsp;
+            <a
+              href="https://github.com/jgrizzled/covidmarkets-server"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-button-link"
+            >
+              <img
+                src="img/icons/github-icon-dark.png"
+                height="20"
+                alt="github"
+              />
+              <span>Server</span> </a
+            >&nbsp;
+            <a
+              href="https://covidmarkets.now.sh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border-link"
+            >
+              Demo
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div>
           <h3>Uniswap10</h3>
           <p>
             View and customize a tradeable index of cryptocurrencies in this
@@ -100,19 +232,34 @@
           </p>
           <ul>
             <li>
+              Computes trading backtests of a liquidity-weighted investment
+              strategy
+            </li>
+            <li>
               Pulls blockchain market data from GraphQL endpoints
             </li>
             <li>
               Normalizes and stores data in a PostgreSQL database
             </li>
             <li>
-              Computes trading backtests of a liquidity-weighted investment
-              strategy
-            </li>
-            <li>
               Provides a scheduler to update the database with fresh market data
             </li>
             <li>Utilizes client and server-side caching for performance</li>
+            <li>
+              JAMstack architecture hosted on
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://vercel.com/"
+                >Vercel</a
+              >, and
+              <a
+                href="https://heroku.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Heroku</a
+              >
+            </li>
             <li>
               Technologies include
               <a
@@ -138,25 +285,19 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 >PostgreSQL</a
-              >,
+              >, and
               <a
                 href="https://expressjs.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Express.js</a
-              >, and
-              <a
-                href="https://heroku.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Heroku</a
               >
             </li>
           </ul>
         </div>
         <div>
           <a
-            href="https://jgrizzled.github.io/uniswap10-server/"
+            href="https://uniswap10.now.sh"
             target="_blank"
             rel="noopener noreferrer"
             class="a-screenshot"
@@ -175,19 +316,6 @@
           </a>
           <div class="project-link-container">
             <a
-              href="https://github.com/jgrizzled/uniswap10-server"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="github-button-link"
-            >
-              <img
-                src="img/icons/github-icon-dark.png"
-                height="20"
-                alt="github"
-              />
-              <span>Client</span>
-            </a>
-            <a
               href="https://github.com/jgrizzled/uniswap10-client"
               target="_blank"
               rel="noopener noreferrer"
@@ -198,8 +326,21 @@
                 height="20"
                 alt="github"
               />
-              <span>Server</span>
-            </a>
+              <span>Client</span> </a
+            >&nbsp;
+            <a
+              href="https://github.com/jgrizzled/uniswap10-server"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-button-link"
+            >
+              <img
+                src="img/icons/github-icon-dark.png"
+                height="20"
+                alt="github"
+              />
+              <span>Server</span> </a
+            >&nbsp;
             <a
               href="https://uniswap10.now.sh/"
               target="_blank"
@@ -223,11 +364,11 @@
               Uses multiple APIs to gather a unique look into the burgeoning
               decentralized fund ecosystem
             </li>
+            <li>Sort and filter fund data in a responsive table</li>
             <li>
               Asynchronously fetches and caches blockchain data
             </li>
-            <li>Sort and filter fund data in a responsive table</li>
-            <li>Includes a module for adding new fund platforms</li>
+            <li>Normalizes fund data from different blockchain platforms</li>
             <li>
               Technologies include
               <a
@@ -333,7 +474,7 @@
                 rel="noopener noreferrer"
                 >Node.js</a
               >
-              and&nbsp;
+              and
               <a
                 href="https://www.w3schools.com/js/js_es6.asp"
                 target="_blank"
