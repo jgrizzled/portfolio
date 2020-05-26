@@ -199,7 +199,7 @@ a:hover {
       rgba(34, 34, 34, 0.4),
       rgba(0, 0, 0, 0.9)
     ),
-    url('../img/sedona-background.jpg') top center;
+    url('img/sedona-background.jpg') top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
