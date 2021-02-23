@@ -386,11 +386,11 @@ section h2 {
 }
 
 #about-section p {
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
 #contact-section {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #contact-section ul {
